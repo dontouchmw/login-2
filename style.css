@@ -1,0 +1,126 @@
+body{
+    background-image: url(main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.form {
+    margin: 0 auto;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border: 2px solid;
+    border-radius: 10px;
+}
+.form-container{
+    width: 300px;
+    height: 280px;
+}
+.log
+{
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10%;
+    animation: flicker 1.5s infinite alternate;
+    color: #ff9f55;
+    letter-spacing: 6px;
+}
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57% , 93% , 100% {
+      text-shadow:
+        0 0 4px #ff9f55,
+        0 0 11px #ff9f55,
+        0 0 19px #ffffff,
+        0 0 40px #ffffff,
+        0 0 80px #ffffff,
+        0 0 90px #ffffff,
+        0 0 100px #ffffff,
+        0 0 150px #ffffff;
+    }
+    20%, 24%, 55% , 65% , 85%{       
+      text-shadow: none;
+    }
+  }
+.log:hover {
+    
+    color: #ff9f55;
+    text-shadow: 0 0 10px #ff9f55;
+}
+.inputbox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forget {
+    text-align: center;
+}
+input {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 5px;
+    margin-bottom:10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    outline: none;
+}
+input:hover {
+    border: 1px solid #ff9f55;
+}
+.inputbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ion-icon {
+    font-size: 20px;
+    color: aliceblue;
+}
+button {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    border-radius: 5px ;
+    background-color: aliceblue;
+    border: none;
+    padding: 7px;
+    margin-top: 1vh;
+    color: black;
+    margin-top: 5vh;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: #ff9f55;
+    color: black;
+    border: none;
+    box-shadow: 0 0 40px #ff9f55 ;
+}
+.forget {
+    opacity: 0.6;
+    color: aliceblue;
+}
+ion-icon:hover {
+    color: #ff9f55;
+}
+a {
+    color: red;
+    font-size: 16px;
+    font-weight: bolder;
+}
+a:hover {
+    color: #ff9f55;
+    text-shadow: 0 0 10px 0 0 20px 0 0 40px #ff9f55;
+}
+
+
